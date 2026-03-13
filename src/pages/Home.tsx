@@ -89,22 +89,43 @@ export function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {[1, 2].map((i) => (
-            <NeoBox key={i} interactive color="white" className="h-64 flex flex-col items-start justify-between p-8 group">
-              <div className="w-16 h-16 bg-[#90e8ff] border-2 border-black rounded-2xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center group-hover:-translate-y-2 transition-transform">
-                <span className="text-2xl font-black">Ψ9</span>
-              </div>
-              <div className="text-left w-full flex justify-between items-end">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">Project {i}</h3>
-                  <p className="text-zinc-500">A cool vibe-coded project.</p>
-                </div>
-                <div className="w-10 h-10 rounded-full border-2 border-black flex items-center justify-center group-hover:bg-[#ff90e8] transition-colors">
-                  <ArrowRight className="w-5 h-5" />
+          {/* Project 1 */}
+          <a href="https://www.hunyinwang.online/" target="_blank" rel="noopener noreferrer" className="block">
+            <NeoBox interactive color="white" className="h-64 flex flex-col items-start justify-between p-0 group overflow-hidden">
+              <div className="w-full h-full relative">
+                <img src="/project1.png" alt="婚姻网站定制" className="w-full h-full object-cover" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                  <div className="text-left w-full flex justify-between items-end">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-1 text-white">婚姻网站定制</h3>
+                      <p className="text-white/80 text-sm">为新人打造的浪漫婚礼邀请网站</p>
+                    </div>
+                    <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center group-hover:bg-[#ff90e8] transition-colors bg-white/20">
+                      <ArrowRight className="w-5 h-5 text-white" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </NeoBox>
-          ))}
+          </a>
+
+          {/* Project 2 */}
+          <NeoBox interactive color="white" className="h-64 flex flex-col items-start justify-between p-0 group overflow-hidden">
+            <div className="w-full h-full relative">
+              <img src="/project2.png" alt="Project 2" className="w-full h-full object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                <div className="text-left w-full flex justify-between items-end">
+                  <div>
+                    <h3 className="text-2xl font-bold mb-1 text-white">时记app（测试中）</h3>
+                    <p className="text-white/80 text-sm">A cool vibe-coded project.</p>
+                  </div>
+                  <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center group-hover:bg-[#ff90e8] transition-colors bg-white/20">
+                    <ArrowRight className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </NeoBox>
         </div>
       </motion.div>
     </div>
